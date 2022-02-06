@@ -1,4 +1,4 @@
-package com.juletats.sfgdi;
+package com.juletats.sfgdi.controllers;
 
 import com.juletats.sfgdi.controllers.PropertyInjectedController;
 import com.juletats.sfgdi.services.GreetingServiceImpl;
