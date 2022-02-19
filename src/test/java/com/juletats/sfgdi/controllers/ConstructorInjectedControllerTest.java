@@ -1,6 +1,6 @@
 package com.juletats.sfgdi.controllers;
 
-import com.juletats.sfgdi.services.ConstructorGreetingServiceImpl;
+import com.juletats.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setIp(){
-        controller = new ConstructorInjectedController(new ConstructorGreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
     @Test
     void getGreeting() {
