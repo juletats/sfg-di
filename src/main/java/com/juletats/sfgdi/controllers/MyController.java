@@ -1,11 +1,17 @@
 package com.juletats.sfgdi.controllers;
 
+import com.juletats.sfgdi.services.GreetingService;
 import org.springframework.stereotype.Component;
 
 @Component
 public class MyController {
+    private final GreetingService greetingService;
+
+    public MyController(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
     public String sayHello(){
-        System.out.println("Hello world!");
-    return "Hi Juliet!";
+    return greetingService.sayGreeting();
     }
 }
