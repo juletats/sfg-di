@@ -1,6 +1,6 @@
 package com.juletats.sfgdi.controllers;
 
-import com.juletats.sfgdi.services.PetService;
+import com.juletats.pets.PetService;
 import org.springframework.stereotype.Controller;
 
 @Controller
